@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4c60ce978dd066637fd1334b99b16a9a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4c60ce978dd066637fd1334b99b16a9a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4c60ce978dd066637fd1334b99b16a9a = L.map(
+                "map_4c60ce978dd066637fd1334b99b16a9a",
+                {
+                    center: [47.5785102, -122.31355772500001],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_4c60ce978dd066637fd1334b99b16a9a);
+
+            
+
+        
+    
+            var tile_layer_ec81b36423aba3ec86faccb13a00eed3 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ec81b36423aba3ec86faccb13a00eed3.addTo(map_4c60ce978dd066637fd1334b99b16a9a);
+        
+    
+            var marker_9e6ec2b36655db871b04b1b53b4d312e = L.marker(
+                [47.5927511, -122.3148668],
+                {
+}
+            ).addTo(map_4c60ce978dd066637fd1334b99b16a9a);
+        
+    
+            var div_icon_6bfd63e7795c240247157d0abc56e3d4 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            width:44px;\n            height:44px;\n            background:#1677ff;\n            border:3px solid white;\n            border-radius:50%;\n            box-shadow:0 2px 6px rgba(0,0,0,.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:17px;\n            font-weight:bold;\n            color:white;\n        \"\u003e\n            1\n        \u003c/div\u003e\n        ",
+  "iconSize": [44, 44],
+  "iconAnchor": [22, 22],
+  "className": "empty",
+});
+        
+    
+        var popup_23246f8ff6b4f2b32d5a77132c1102ec = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_054320e01692fe2ce712d7689bb9ca77 = $(`<div id="html_054320e01692fe2ce712d7689bb9ca77" style="width: 100.0%; height: 100.0%;"><b>Stop 1</b><br>1713 14th Ave S, Seattle, WA</div>`)[0];
+                popup_23246f8ff6b4f2b32d5a77132c1102ec.setContent(html_054320e01692fe2ce712d7689bb9ca77);
+            
+        
+
+        marker_9e6ec2b36655db871b04b1b53b4d312e.bindPopup(popup_23246f8ff6b4f2b32d5a77132c1102ec)
+        ;
+
+        
+    
+    
+            marker_9e6ec2b36655db871b04b1b53b4d312e.bindTooltip(
+                `<div>
+                     Stop 1: 1713 14th Ave S, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9e6ec2b36655db871b04b1b53b4d312e.setIcon(div_icon_6bfd63e7795c240247157d0abc56e3d4);
+            
+    
+            var marker_3a8360b89df0154026072139ac96c523 = L.marker(
+                [47.5817308, -122.3123958],
+                {
+}
+            ).addTo(map_4c60ce978dd066637fd1334b99b16a9a);
+        
+    
+            var div_icon_c93fa0a86813815fc65a64dcd05b96c7 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            width:44px;\n            height:44px;\n            background:#1677ff;\n            border:3px solid white;\n            border-radius:50%;\n            box-shadow:0 2px 6px rgba(0,0,0,.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:17px;\n            font-weight:bold;\n            color:white;\n        \"\u003e\n            2\n        \u003c/div\u003e\n        ",
+  "iconSize": [44, 44],
+  "iconAnchor": [22, 22],
+  "className": "empty",
+});
+        
+    
+        var popup_95a194d465720e569a1279fd8591b00d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_29a8f0c68ea4e251d6ca98f1af41dc42 = $(`<div id="html_29a8f0c68ea4e251d6ca98f1af41dc42" style="width: 100.0%; height: 100.0%;"><b>Stop 2</b><br>2341 16th Ave S Unit A, Seattle, WA</div>`)[0];
+                popup_95a194d465720e569a1279fd8591b00d.setContent(html_29a8f0c68ea4e251d6ca98f1af41dc42);
+            
+        
+
+        marker_3a8360b89df0154026072139ac96c523.bindPopup(popup_95a194d465720e569a1279fd8591b00d)
+        ;
+
+        
+    
+    
+            marker_3a8360b89df0154026072139ac96c523.bindTooltip(
+                `<div>
+                     Stop 2: 2341 16th Ave S Unit A, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a8360b89df0154026072139ac96c523.setIcon(div_icon_c93fa0a86813815fc65a64dcd05b96c7);
+            
+    
+            var marker_9d8f74aab65a35faf78ed7ac37f1ee6a = L.marker(
+                [47.5787592, -122.3111519],
+                {
+}
+            ).addTo(map_4c60ce978dd066637fd1334b99b16a9a);
+        
+    
+            var div_icon_db87e5a54d8d1f9bf0cdf737b0450857 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            width:44px;\n            height:44px;\n            background:#1677ff;\n            border:3px solid white;\n            border-radius:50%;\n            box-shadow:0 2px 6px rgba(0,0,0,.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:17px;\n            font-weight:bold;\n            color:white;\n        \"\u003e\n            3\n        \u003c/div\u003e\n        ",
+  "iconSize": [44, 44],
+  "iconAnchor": [22, 22],
+  "className": "empty",
+});
+        
+    
+        var popup_3fed648f3bf611f8b164fa181892300a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac967f20c0a235b9ea32b48f2ab58cef = $(`<div id="html_ac967f20c0a235b9ea32b48f2ab58cef" style="width: 100.0%; height: 100.0%;"><b>Stop 3</b><br>1636 S McClellan Street Apt #507, Seattle, WA</div>`)[0];
+                popup_3fed648f3bf611f8b164fa181892300a.setContent(html_ac967f20c0a235b9ea32b48f2ab58cef);
+            
+        
+
+        marker_9d8f74aab65a35faf78ed7ac37f1ee6a.bindPopup(popup_3fed648f3bf611f8b164fa181892300a)
+        ;
+
+        
+    
+    
+            marker_9d8f74aab65a35faf78ed7ac37f1ee6a.bindTooltip(
+                `<div>
+                     Stop 3: 1636 S McClellan Street Apt #507, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9d8f74aab65a35faf78ed7ac37f1ee6a.setIcon(div_icon_db87e5a54d8d1f9bf0cdf737b0450857);
+            
+    
+            var marker_745c017e2515022572a3a92a5d353ba1 = L.marker(
+                [47.5607997, -122.3158164],
+                {
+}
+            ).addTo(map_4c60ce978dd066637fd1334b99b16a9a);
+        
+    
+            var div_icon_021304ab8af5369f84b5bdcd6a82f107 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            width:44px;\n            height:44px;\n            background:#1677ff;\n            border:3px solid white;\n            border-radius:50%;\n            box-shadow:0 2px 6px rgba(0,0,0,.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:17px;\n            font-weight:bold;\n            color:white;\n        \"\u003e\n            4\n        \u003c/div\u003e\n        ",
+  "iconSize": [44, 44],
+  "iconAnchor": [22, 22],
+  "className": "empty",
+});
+        
+    
+        var popup_4e9e82740a911d1973cf58311d3daf9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_668be42af51af6f8a109e51d088b3e25 = $(`<div id="html_668be42af51af6f8a109e51d088b3e25" style="width: 100.0%; height: 100.0%;"><b>Stop 4</b><br>4702 13th Ave S, Seattle, WA</div>`)[0];
+                popup_4e9e82740a911d1973cf58311d3daf9b.setContent(html_668be42af51af6f8a109e51d088b3e25);
+            
+        
+
+        marker_745c017e2515022572a3a92a5d353ba1.bindPopup(popup_4e9e82740a911d1973cf58311d3daf9b)
+        ;
+
+        
+    
+    
+            marker_745c017e2515022572a3a92a5d353ba1.bindTooltip(
+                `<div>
+                     Stop 4: 4702 13th Ave S, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_745c017e2515022572a3a92a5d353ba1.setIcon(div_icon_021304ab8af5369f84b5bdcd6a82f107);
+            
+    
+            map_4c60ce978dd066637fd1334b99b16a9a.fitBounds(
+                [[47.5927511, -122.3148668], [47.5817308, -122.3123958], [47.5787592, -122.3111519], [47.5607997, -122.3158164]],
+                {"padding": [35, 35]}
+            );
+        
+</script>
+</html>
