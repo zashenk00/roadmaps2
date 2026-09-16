@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_59dc8bf6b90bef21de1192a7a6ec6b43 {
+                #map_36898b0363e379005a25ad047e54b30c {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -50,21 +50,23 @@
             </script>
 
         
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
 </head>
 <body>
     
-    <!-- MAP_VERSION:1789239999 -->
+    <!-- MAP_VERSION:1789539811 -->
     
-            <div class="folium-map" id="map_59dc8bf6b90bef21de1192a7a6ec6b43" ></div>
+            <div class="folium-map" id="map_36898b0363e379005a25ad047e54b30c" ></div>
         
 </body>
 <script>
     
     
-            var map_59dc8bf6b90bef21de1192a7a6ec6b43 = L.map(
-                "map_59dc8bf6b90bef21de1192a7a6ec6b43",
+            var map_36898b0363e379005a25ad047e54b30c = L.map(
+                "map_36898b0363e379005a25ad047e54b30c",
                 {
-                    center: [47.592669475, -122.306187975],
+                    center: [47.57826646666666, -122.310523375],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 14,
@@ -74,13 +76,13 @@
 
                 }
             );
-            L.control.scale().addTo(map_59dc8bf6b90bef21de1192a7a6ec6b43);
+            L.control.scale().addTo(map_36898b0363e379005a25ad047e54b30c);
 
             
 
         
     
-            var tile_layer_2735607263bc5d96431122fe3034ebca = L.tileLayer(
+            var tile_layer_5b66efa4cb7092ef29648d762cade690 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -97,40 +99,48 @@
             );
         
     
-            tile_layer_2735607263bc5d96431122fe3034ebca.addTo(map_59dc8bf6b90bef21de1192a7a6ec6b43);
+            tile_layer_5b66efa4cb7092ef29648d762cade690.addTo(map_36898b0363e379005a25ad047e54b30c);
         
     
-            var marker_ffb4eeaa3f0d2d513066b4f40c485bad = L.marker(
+            var locate_control_c02b9951dc8d8b0a49ea254bff49a7d7 = L.control.locate(
+                {"flyTo": true, "keepCurrentZoomLevel": false, "strings": {"title": "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u043c\u043e\u0454 \u043c\u0456\u0441\u0446\u0435\u0437\u043d\u0430\u0445\u043e\u0434\u0436\u0435\u043d\u043d\u044f"}}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+            
+                locate_control_c02b9951dc8d8b0a49ea254bff49a7d7.start();
+            
+        
+    
+            var marker_3630ef512ac080bf711dc6bb59411225 = L.marker(
                 [47.581676, -122.30461],
                 {
 }
-            ).addTo(map_59dc8bf6b90bef21de1192a7a6ec6b43);
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
         
     
-            var div_icon_694f3fbbb8ffbd62650b7d83c1ebc876 = L.divIcon({
+            var div_icon_0c257f91ba6a13ecc8e8c3ca4a27a779 = L.divIcon({
   "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            9\n        \u003c/div\u003e\n        ",
   "className": "empty",
 });
         
     
-        var popup_a02f647d3181195b763924a0b40e054b = L.popup({
+        var popup_c951bbb55f6b5ac88a692f4748204464 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_5e7b5c31330f23e65f41a211726296ce = $(`<div id="html_5e7b5c31330f23e65f41a211726296ce" style="width: 100.0%; height: 100.0%;"><b>Стоп 9</b><br>2341 22ND Ave S, Seattle, WA</div>`)[0];
-                popup_a02f647d3181195b763924a0b40e054b.setContent(html_5e7b5c31330f23e65f41a211726296ce);
+                var html_225194250c182cf6c29e05fc2f78abaa = $(`<div id="html_225194250c182cf6c29e05fc2f78abaa" style="width: 100.0%; height: 100.0%;"><b>Стоп 9</b><br>2341 22ND Ave S, Seattle, WA</div>`)[0];
+                popup_c951bbb55f6b5ac88a692f4748204464.setContent(html_225194250c182cf6c29e05fc2f78abaa);
             
         
 
-        marker_ffb4eeaa3f0d2d513066b4f40c485bad.bindPopup(popup_a02f647d3181195b763924a0b40e054b)
+        marker_3630ef512ac080bf711dc6bb59411225.bindPopup(popup_c951bbb55f6b5ac88a692f4748204464)
         ;
 
         
     
     
-            marker_ffb4eeaa3f0d2d513066b4f40c485bad.bindTooltip(
+            marker_3630ef512ac080bf711dc6bb59411225.bindTooltip(
                 `<div>
                      Стоп 9 — 2341 22ND Ave S, Seattle, WA
                  </div>`,
@@ -140,40 +150,40 @@
             );
         
     
-                marker_ffb4eeaa3f0d2d513066b4f40c485bad.setIcon(div_icon_694f3fbbb8ffbd62650b7d83c1ebc876);
+                marker_3630ef512ac080bf711dc6bb59411225.setIcon(div_icon_0c257f91ba6a13ecc8e8c3ca4a27a779);
             
     
-            var marker_0b980f89ade871046a4f848f4767341c = L.marker(
+            var marker_35e83b4fd8e0dbd0f73c9cb63c599c00 = L.marker(
                 [47.6140903, -122.3074924],
                 {
 }
-            ).addTo(map_59dc8bf6b90bef21de1192a7a6ec6b43);
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
         
     
-            var div_icon_ccd9c60974dba7dede1813f7f75385b7 = L.divIcon({
+            var div_icon_9cc4d3440197595748fbfd8969ba98ba = L.divIcon({
   "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            10\n        \u003c/div\u003e\n        ",
   "className": "empty",
 });
         
     
-        var popup_c0ac7e71b730c045fe7bd1416e6b6f25 = L.popup({
+        var popup_d055cdc057fc9af91a3d24b360edc17b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d09c784154058bda9964e9ba11928788 = $(`<div id="html_d09c784154058bda9964e9ba11928788" style="width: 100.0%; height: 100.0%;"><b>Стоп 10</b><br>2345a 19th Ave S, Seattle, WA</div>`)[0];
-                popup_c0ac7e71b730c045fe7bd1416e6b6f25.setContent(html_d09c784154058bda9964e9ba11928788);
+                var html_f29b70e03473ba4ac4f0620d0e195f0c = $(`<div id="html_f29b70e03473ba4ac4f0620d0e195f0c" style="width: 100.0%; height: 100.0%;"><b>Стоп 10</b><br>2345a 19th Ave S, Seattle, WA</div>`)[0];
+                popup_d055cdc057fc9af91a3d24b360edc17b.setContent(html_f29b70e03473ba4ac4f0620d0e195f0c);
             
         
 
-        marker_0b980f89ade871046a4f848f4767341c.bindPopup(popup_c0ac7e71b730c045fe7bd1416e6b6f25)
+        marker_35e83b4fd8e0dbd0f73c9cb63c599c00.bindPopup(popup_d055cdc057fc9af91a3d24b360edc17b)
         ;
 
         
     
     
-            marker_0b980f89ade871046a4f848f4767341c.bindTooltip(
+            marker_35e83b4fd8e0dbd0f73c9cb63c599c00.bindTooltip(
                 `<div>
                      Стоп 10 — 2345a 19th Ave S, Seattle, WA
                  </div>`,
@@ -183,40 +193,40 @@
             );
         
     
-                marker_0b980f89ade871046a4f848f4767341c.setIcon(div_icon_ccd9c60974dba7dede1813f7f75385b7);
+                marker_35e83b4fd8e0dbd0f73c9cb63c599c00.setIcon(div_icon_9cc4d3440197595748fbfd8969ba98ba);
             
     
-            var marker_6862bdab069f1caa4ebb306e4696cfd1 = L.marker(
-                [47.5876116, -122.308219],
+            var marker_d1e10a105b870228d0ee4a2e9bb1cd0b = L.marker(
+                [47.580138, -122.3273036],
                 {
 }
-            ).addTo(map_59dc8bf6b90bef21de1192a7a6ec6b43);
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
         
     
-            var div_icon_aefc331a942c348092923651f8f88640 = L.divIcon({
+            var div_icon_5915a495397fe5666d48279efbacb40c = L.divIcon({
   "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            11\n        \u003c/div\u003e\n        ",
   "className": "empty",
 });
         
     
-        var popup_e2fe848bea9324888f2a74d5c5e64498 = L.popup({
+        var popup_cb14f88b8da397b7130041eef2ec924c = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_30653b7da3b6beb5bddeb44e01047962 = $(`<div id="html_30653b7da3b6beb5bddeb44e01047962" style="width: 100.0%; height: 100.0%;"><b>Стоп 11</b><br>1901 S State St A, Seattle, WA</div>`)[0];
-                popup_e2fe848bea9324888f2a74d5c5e64498.setContent(html_30653b7da3b6beb5bddeb44e01047962);
+                var html_8e045bcdf17ddbc38672e1035f88af00 = $(`<div id="html_8e045bcdf17ddbc38672e1035f88af00" style="width: 100.0%; height: 100.0%;"><b>Стоп 11</b><br>1901 S State St A, Seattle, WA</div>`)[0];
+                popup_cb14f88b8da397b7130041eef2ec924c.setContent(html_8e045bcdf17ddbc38672e1035f88af00);
             
         
 
-        marker_6862bdab069f1caa4ebb306e4696cfd1.bindPopup(popup_e2fe848bea9324888f2a74d5c5e64498)
+        marker_d1e10a105b870228d0ee4a2e9bb1cd0b.bindPopup(popup_cb14f88b8da397b7130041eef2ec924c)
         ;
 
         
     
     
-            marker_6862bdab069f1caa4ebb306e4696cfd1.bindTooltip(
+            marker_d1e10a105b870228d0ee4a2e9bb1cd0b.bindTooltip(
                 `<div>
                      Стоп 11 — 1901 S State St A, Seattle, WA
                  </div>`,
@@ -226,42 +236,42 @@
             );
         
     
-                marker_6862bdab069f1caa4ebb306e4696cfd1.setIcon(div_icon_aefc331a942c348092923651f8f88640);
+                marker_d1e10a105b870228d0ee4a2e9bb1cd0b.setIcon(div_icon_5915a495397fe5666d48279efbacb40c);
             
     
-            var marker_42ce0dab24b63a3be389cbf24c5468df = L.marker(
+            var marker_dbecad8ee803891732b921dee12c5b67 = L.marker(
                 [47.5873, -122.3044305],
                 {
 }
-            ).addTo(map_59dc8bf6b90bef21de1192a7a6ec6b43);
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
         
     
-            var div_icon_a7875f92b12f9245a7dc4f68b9b3d4f3 = L.divIcon({
+            var div_icon_b3e9441716b3b12ff8bfd7a562c35ee7 = L.divIcon({
   "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            12\n        \u003c/div\u003e\n        ",
   "className": "empty",
 });
         
     
-        var popup_2d2bcbddcde4f91d7ef5957b4120cc4e = L.popup({
+        var popup_870eea0d0064d45d0529179ab9207ac7 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_0731e207c5c3ac45e600f217c5127683 = $(`<div id="html_0731e207c5c3ac45e600f217c5127683" style="width: 100.0%; height: 100.0%;"><b>Стоп 12</b><br>1765 22nd Ave S w521, Seattle, WA</div>`)[0];
-                popup_2d2bcbddcde4f91d7ef5957b4120cc4e.setContent(html_0731e207c5c3ac45e600f217c5127683);
+                var html_bb006b6d8f021d5cda95daeca7a365c0 = $(`<div id="html_bb006b6d8f021d5cda95daeca7a365c0" style="width: 100.0%; height: 100.0%;"><b>Стоп 12</b><br>1765 22nd Ave S W521, Seattle, WA</div>`)[0];
+                popup_870eea0d0064d45d0529179ab9207ac7.setContent(html_bb006b6d8f021d5cda95daeca7a365c0);
             
         
 
-        marker_42ce0dab24b63a3be389cbf24c5468df.bindPopup(popup_2d2bcbddcde4f91d7ef5957b4120cc4e)
+        marker_dbecad8ee803891732b921dee12c5b67.bindPopup(popup_870eea0d0064d45d0529179ab9207ac7)
         ;
 
         
     
     
-            marker_42ce0dab24b63a3be389cbf24c5468df.bindTooltip(
+            marker_dbecad8ee803891732b921dee12c5b67.bindTooltip(
                 `<div>
-                     Стоп 12 — 1765 22nd Ave S w521, Seattle, WA
+                     Стоп 12 — 1765 22nd Ave S W521, Seattle, WA
                  </div>`,
                 {
   "sticky": true,
@@ -269,11 +279,355 @@
             );
         
     
-                marker_42ce0dab24b63a3be389cbf24c5468df.setIcon(div_icon_a7875f92b12f9245a7dc4f68b9b3d4f3);
+                marker_dbecad8ee803891732b921dee12c5b67.setIcon(div_icon_b3e9441716b3b12ff8bfd7a562c35ee7);
             
     
-            map_59dc8bf6b90bef21de1192a7a6ec6b43.fitBounds(
-                [[47.581676, -122.30461], [47.6140903, -122.3074924], [47.5876116, -122.308219], [47.5873, -122.3044305]],
+            var marker_880887f6ddbc79ff670f795dec738bba = L.marker(
+                [47.5482511, -122.316026],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_5f951ed85d14bd3bee6abf66ccf97b99 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            5\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_02da1701aee9803a30311aba29746bee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1faf497e7f3ec06214222f17c4355961 = $(`<div id="html_1faf497e7f3ec06214222f17c4355961" style="width: 100.0%; height: 100.0%;"><b>Стоп 5</b><br>4702 13th Ave S, Seattle, WA</div>`)[0];
+                popup_02da1701aee9803a30311aba29746bee.setContent(html_1faf497e7f3ec06214222f17c4355961);
+            
+        
+
+        marker_880887f6ddbc79ff670f795dec738bba.bindPopup(popup_02da1701aee9803a30311aba29746bee)
+        ;
+
+        
+    
+    
+            marker_880887f6ddbc79ff670f795dec738bba.bindTooltip(
+                `<div>
+                     Стоп 5 — 4702 13th Ave S, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_880887f6ddbc79ff670f795dec738bba.setIcon(div_icon_5f951ed85d14bd3bee6abf66ccf97b99);
+            
+    
+            var marker_c40e53446018dd04f16d2d5741a0ce9a = L.marker(
+                [47.5573421, -122.315292],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_381e9da2550f88c9383dfe5e2b6bcdee = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            6\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_7071a40af1114709c104fc709e2291be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_150bb621353f0cc64dd27a994eaa7a91 = $(`<div id="html_150bb621353f0cc64dd27a994eaa7a91" style="width: 100.0%; height: 100.0%;"><b>Стоп 6</b><br>1316 S Hudson St, Seattle, WA</div>`)[0];
+                popup_7071a40af1114709c104fc709e2291be.setContent(html_150bb621353f0cc64dd27a994eaa7a91);
+            
+        
+
+        marker_c40e53446018dd04f16d2d5741a0ce9a.bindPopup(popup_7071a40af1114709c104fc709e2291be)
+        ;
+
+        
+    
+    
+            marker_c40e53446018dd04f16d2d5741a0ce9a.bindTooltip(
+                `<div>
+                     Стоп 6 — 1316 S Hudson St, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c40e53446018dd04f16d2d5741a0ce9a.setIcon(div_icon_381e9da2550f88c9383dfe5e2b6bcdee);
+            
+    
+            var marker_70e97f1518b5f523fb6f003d7e4ab88f = L.marker(
+                [47.5738254, -122.3038698],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_86850dde8eb1e18060ff20a6d8ee1045 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            7\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_75b11ad874fc00b97884dbf589ce4c12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea802eb4890d6a267fccd4a9e54303d0 = $(`<div id="html_ea802eb4890d6a267fccd4a9e54303d0" style="width: 100.0%; height: 100.0%;"><b>Стоп 7</b><br>2211 S Horton St, Seattle, WA</div>`)[0];
+                popup_75b11ad874fc00b97884dbf589ce4c12.setContent(html_ea802eb4890d6a267fccd4a9e54303d0);
+            
+        
+
+        marker_70e97f1518b5f523fb6f003d7e4ab88f.bindPopup(popup_75b11ad874fc00b97884dbf589ce4c12)
+        ;
+
+        
+    
+    
+            marker_70e97f1518b5f523fb6f003d7e4ab88f.bindTooltip(
+                `<div>
+                     Стоп 7 — 2211 S Horton St, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70e97f1518b5f523fb6f003d7e4ab88f.setIcon(div_icon_86850dde8eb1e18060ff20a6d8ee1045);
+            
+    
+            var marker_ce5d71724d67869aca7942b717fbbecf = L.marker(
+                [47.579311, -122.2948283],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_e225861220e099b2d8fb04dcd0bdcae7 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            8\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_49df24e0c92127d1dcca92326e11d2fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fdf4cdfbe6b602804ef0b7ef7e75bf0 = $(`<div id="html_4fdf4cdfbe6b602804ef0b7ef7e75bf0" style="width: 100.0%; height: 100.0%;"><b>Стоп 8</b><br>2554 29th Ave S Apt 13, Seattle, WA</div>`)[0];
+                popup_49df24e0c92127d1dcca92326e11d2fb.setContent(html_4fdf4cdfbe6b602804ef0b7ef7e75bf0);
+            
+        
+
+        marker_ce5d71724d67869aca7942b717fbbecf.bindPopup(popup_49df24e0c92127d1dcca92326e11d2fb)
+        ;
+
+        
+    
+    
+            marker_ce5d71724d67869aca7942b717fbbecf.bindTooltip(
+                `<div>
+                     Стоп 8 — 2554 29th Ave S Apt 13, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ce5d71724d67869aca7942b717fbbecf.setIcon(div_icon_e225861220e099b2d8fb04dcd0bdcae7);
+            
+    
+            var marker_09f7b0d90395496c9900737921cf7d48 = L.marker(
+                [47.6565207, -122.313267],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_21b243d347a3b719e140e26f80199313 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            1\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_2326400cd15dc6fd1119e1cc59ca3a4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_013e22409436685b2c770c3bac2f1ade = $(`<div id="html_013e22409436685b2c770c3bac2f1ade" style="width: 100.0%; height: 100.0%;"><b>Стоп 1</b><br>1713 14th Ave S, Seattle, WA</div>`)[0];
+                popup_2326400cd15dc6fd1119e1cc59ca3a4b.setContent(html_013e22409436685b2c770c3bac2f1ade);
+            
+        
+
+        marker_09f7b0d90395496c9900737921cf7d48.bindPopup(popup_2326400cd15dc6fd1119e1cc59ca3a4b)
+        ;
+
+        
+    
+    
+            marker_09f7b0d90395496c9900737921cf7d48.bindTooltip(
+                `<div>
+                     Стоп 1 — 1713 14th Ave S, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_09f7b0d90395496c9900737921cf7d48.setIcon(div_icon_21b243d347a3b719e140e26f80199313);
+            
+    
+            var marker_a45321943b811d9db40a9de7334ad911 = L.marker(
+                [47.5337327, -122.311983],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_be6aed36cebe59c8d2fcf31eff69a350 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            2\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_52c3389bfb5b9b21d72372ef67fb399b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1df2d8a583185a9614260fc5c610ea22 = $(`<div id="html_1df2d8a583185a9614260fc5c610ea22" style="width: 100.0%; height: 100.0%;"><b>Стоп 2</b><br>2341 16th Ave S Unit A, Seattle, WA</div>`)[0];
+                popup_52c3389bfb5b9b21d72372ef67fb399b.setContent(html_1df2d8a583185a9614260fc5c610ea22);
+            
+        
+
+        marker_a45321943b811d9db40a9de7334ad911.bindPopup(popup_52c3389bfb5b9b21d72372ef67fb399b)
+        ;
+
+        
+    
+    
+            marker_a45321943b811d9db40a9de7334ad911.bindTooltip(
+                `<div>
+                     Стоп 2 — 2341 16th Ave S Unit A, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a45321943b811d9db40a9de7334ad911.setIcon(div_icon_be6aed36cebe59c8d2fcf31eff69a350);
+            
+    
+            var marker_f0bc605d95474e2f7250bd689b4a2f46 = L.marker(
+                [47.5787592, -122.3111519],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_83944e9522ceb9f59d1814dcbcc063e2 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            3\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_51902893a5e7e88fdb20c9c2e4dffdd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cec7e1f65c4f0c294472963b58b81698 = $(`<div id="html_cec7e1f65c4f0c294472963b58b81698" style="width: 100.0%; height: 100.0%;"><b>Стоп 3</b><br>1636 S McClellan Street Apt #507, Seattle, WA</div>`)[0];
+                popup_51902893a5e7e88fdb20c9c2e4dffdd1.setContent(html_cec7e1f65c4f0c294472963b58b81698);
+            
+        
+
+        marker_f0bc605d95474e2f7250bd689b4a2f46.bindPopup(popup_51902893a5e7e88fdb20c9c2e4dffdd1)
+        ;
+
+        
+    
+    
+            marker_f0bc605d95474e2f7250bd689b4a2f46.bindTooltip(
+                `<div>
+                     Стоп 3 — 1636 S McClellan Street Apt #507, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f0bc605d95474e2f7250bd689b4a2f46.setIcon(div_icon_83944e9522ceb9f59d1814dcbcc063e2);
+            
+    
+            var marker_cd6d9377bb246c1926bec98388536a68 = L.marker(
+                [47.5482511, -122.316026],
+                {
+}
+            ).addTo(map_36898b0363e379005a25ad047e54b30c);
+        
+    
+            var div_icon_12669e1c563b7a843a00e59d96645815 = L.divIcon({
+  "html": "\n        \u003cdiv style=\"\n            background:#2563eb;\n            color:white;\n            width:34px;\n            height:34px;\n            border-radius:50%;\n            border:3px solid white;\n            box-shadow:0 2px 7px rgba(0,0,0,0.45);\n            display:flex;\n            align-items:center;\n            justify-content:center;\n            font-size:15px;\n            font-weight:700;\n        \"\u003e\n            4\n        \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+        
+    
+        var popup_d038f650cffb52d7c834060a796b0b07 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca4397846de2ae7f915b28003c99370f = $(`<div id="html_ca4397846de2ae7f915b28003c99370f" style="width: 100.0%; height: 100.0%;"><b>Стоп 4</b><br>4702 13th Ave S, Seattle, WA</div>`)[0];
+                popup_d038f650cffb52d7c834060a796b0b07.setContent(html_ca4397846de2ae7f915b28003c99370f);
+            
+        
+
+        marker_cd6d9377bb246c1926bec98388536a68.bindPopup(popup_d038f650cffb52d7c834060a796b0b07)
+        ;
+
+        
+    
+    
+            marker_cd6d9377bb246c1926bec98388536a68.bindTooltip(
+                `<div>
+                     Стоп 4 — 4702 13th Ave S, Seattle, WA
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cd6d9377bb246c1926bec98388536a68.setIcon(div_icon_12669e1c563b7a843a00e59d96645815);
+            
+    
+            map_36898b0363e379005a25ad047e54b30c.fitBounds(
+                [[47.581676, -122.30461], [47.6140903, -122.3074924], [47.580138, -122.3273036], [47.5873, -122.3044305], [47.5482511, -122.316026], [47.5573421, -122.315292], [47.5738254, -122.3038698], [47.579311, -122.2948283], [47.6565207, -122.313267], [47.5337327, -122.311983], [47.5787592, -122.3111519], [47.5482511, -122.316026]],
                 {"padding": [35, 35]}
             );
         
